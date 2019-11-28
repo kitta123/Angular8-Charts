@@ -41,16 +41,6 @@ barcharts(){
     var chart = new google.charts.Bar(document.getElementById('chart_div'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
-
-    // var btns = document.getElementById('btn-group');
-    //
-    // btns.onclick = function (e) {
-    //
-    // if (e.target.tagName === 'BUTTON') {
-    //   options.vAxis.format = e.target.id === 'none' ? '' : e.target.id;
-    //   chart.draw(data, google.charts.Bar.convertOptions(options));
-    // }
-    // }
     }
   }
 

@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { BarchartComponent } from './barchart/barchart.component';
+import { BubblechartComponent } from './bubblechart/bubblechart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarchartComponent
+    BarchartComponent,
+    BubblechartComponent
   ],
   imports: [
     BrowserModule,

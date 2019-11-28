@@ -12,6 +12,11 @@ export class AppComponent implements OnInit {
   LineChart=[];
   BarChart=[];
   PieChart=[];
+  clickMessage = '';
+
+  onClickMe() {
+    this.clickMessage = 'Welcome To Angular-Google-Charts!';
+  }
 
   ngOnInit()
   {
