@@ -1,5 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
+import { GoogleChartsModule } from 'angular-google-charts';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -126,10 +128,12 @@ options: {
 }
 });
 
-this.kitta();
+this.donutchart();
 
-  }
-  kitta()
+}
+
+// Start Google Charts DonutChart
+  donutchart()
   {
   google.charts.load("current", {packages:["corechart"]});
   google.charts.setOnLoadCallback(drawChart);
@@ -140,4 +144,5 @@ this.kitta();
    chart.draw(data, options);
   }
 }
+
 }
